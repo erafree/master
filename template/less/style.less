@@ -1,0 +1,151 @@
+@import url('colors.less');
+@import url('blocks.less');
+@import url('../fonts/open-sans.css');
+@import url('../fonts/bebasneuebold.css');
+@import url('../fonts/font-awesome.css');
+
+
+
+@hdH: 80px;
+@btnH: 62px;
+@brR: 40px;
+@topP: 30%;
+
+@grayTr: rgba(37, 35, 40, 0.85);
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 71px;
+	font-weight: 800;
+	font-family: 'Bebas Neue';
+	margin: 0;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.pr_head {
+	background-color: @hdBg;
+	height: @hdH;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .05), 0 -1px 0 rgba(0, 0, 0, .36) inset;
+
+	img {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+	}
+}
+
+.pr_imgsection {
+
+	img {
+		width: 100%;
+		margin-top: @hdH;
+	}
+
+	margin-top: -1 * @hdH;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+.pr_glasspan {
+	@pd: 70px;
+	@pnW: 410px;
+
+	position: absolute;
+	top: @topP;
+	left: 50%;
+	margin-left: -1 * (@pnW / 2);
+	width: @pnW;
+	border-radius: @brR;
+	background-color: rgba(255, 255, 255, 0.18);
+	color: #fff;
+	margin-top: 130px;
+
+	.pr_grbtn {
+		background-color: rgba(89, 199, 81, 0.9);
+		box-shadow: 0 5px 27px rgba(0, 0, 0, 0.15);
+		height: @btnH;
+		line-height: @btnH;
+		text-align: center;
+		border-radius: @brR;
+		font-size: 18px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.pr_descr {
+		padding:20px @pd;
+		font-weight: normal;
+		line-height: 21px;
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+.pr_title {
+	position: absolute;
+	top: @topP;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+
+	h3 {
+		font-family: 'Open Sans';
+		font-weight: 600;
+		margin-top: 5px;
+	}
+}
+
+.pr_grline {
+	background-color: @grayTr;
+	height: @hdH;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+	.btn {
+		border:1px solid #7a7a7a;
+		color: #fff;
+		font-weight: 600;
+		font-size: 14px;
+		width: 300px;
+		margin-top: 18px;
+	}
+}
+
+.pr_feedback {
+	background-color: #e7e7e7;
+	min-height: 100px;
+	display: none;
+}
+
+.btn {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btn--lghtm {
+	@h: 45px;
+	border-radius: 3px;
+	height: @h;
+	line-height: @h;
+}

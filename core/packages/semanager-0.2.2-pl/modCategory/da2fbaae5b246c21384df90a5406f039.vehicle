@@ -1,0 +1,78 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Snippets' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Chunks' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Plugins' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'semanager',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"semanager-0.2.2-pl\\/modCategory\\/da2fbaae5b246c21384df90a5406f039\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"semanager"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"semanager-0.2.2-pl\\/modCategory\\/da2fbaae5b246c21384df90a5406f039\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"semanager"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '60356583aaff2a3ee4c9a4db313eac83',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'da2fbaae5b246c21384df90a5406f039',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"SE Manager"}',
+);

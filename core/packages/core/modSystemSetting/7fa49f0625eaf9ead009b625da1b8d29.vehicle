@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '238ed72a54a3aae06c4c6b9efad426d5',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7fa49f0625eaf9ead009b625da1b8d29',
+  'native_key' => 'cache_alias_map',
+  'object' => '{"key":"cache_alias_map","value":"1","xtype":"combo-boolean","namespace":"core","area":"caching","editedon":null}',
+);

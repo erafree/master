@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'semanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bb988e73e013bd600185c256c556b0ad',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0ae8dc64b72735722ee7f81ac401b451',
+  'native_key' => 'semanager.use_categories',
+  'object' => '{"key":"semanager.use_categories","value":true,"xtype":"combo-boolean","namespace":"semanager","area":"Other","editedon":null}',
+);

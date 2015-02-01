@@ -1,0 +1,100 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '06564a8b7eb44dffe191d536e2e62c0f' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnHandleRequest","priority":0,"propertyset":0}',
+        'guid' => '31543b13171cec35562966c414071b82',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnHandleRequest',
+        ),
+        'signature' => '21224f800c3084d7db7bff807553594d',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Snippets' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Chunks' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+        'Plugins' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => true,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'semanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '982eaa582ce7c24d4e35dbd97a89815e',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'd2061f212cecf9f987a8a4e332f5968b',
+  'native_key' => NULL,
+  'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"SEManager","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"if (!$modx->getOption(\'semanager.auto_create_elements\', null, false)) return \'\';\\nif (!isset($modx->semanager) || !is_object($modx->semanager)) {\\n    $semanager = $modx->getService(\'semanager\',\'SEManager\',$modx->getOption(\'semanager.core_path\',null,$modx->getOption(\'core_path\').\'components\\/semanager\\/\').\'model\\/semanager\\/\', array());\\n    if (!($semanager instanceof SEManager)) return \'---\';\\n}\\n\\nif ($files = $modx->semanager->getNewFiles()) {\\n    $modx->semanager->newElem($files);\\n    $modx->cacheManager->refresh();\\n}\\nreturn \'\';","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/semanager\\/elements\\/plugins\\/plugin.semanager.php","content":"if (!$modx->getOption(\'semanager.auto_create_elements\', null, false)) return \'\';\\nif (!isset($modx->semanager) || !is_object($modx->semanager)) {\\n    $semanager = $modx->getService(\'semanager\',\'SEManager\',$modx->getOption(\'semanager.core_path\',null,$modx->getOption(\'core_path\').\'components\\/semanager\\/\').\'model\\/semanager\\/\', array());\\n    if (!($semanager instanceof SEManager)) return \'---\';\\n}\\n\\nif ($files = $modx->semanager->getNewFiles()) {\\n    $modx->semanager->newElem($files);\\n    $modx->cacheManager->refresh();\\n}\\nreturn \'\';"}',
+);

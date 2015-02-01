@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5b7d554a1c97c6c4f76552dd11e0c75a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd8cd145e6d434bba3e79d312f9f58518',
+  'native_key' => 'use_editor',
+  'object' => '{"key":"use_editor","value":"1","xtype":"combo-boolean","namespace":"core","area":"editor","editedon":null}',
+);

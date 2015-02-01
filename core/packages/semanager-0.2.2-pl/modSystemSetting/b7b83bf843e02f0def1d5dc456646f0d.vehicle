@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'semanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '77f0f7234190e221466acc2653b31bdb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b7b83bf843e02f0def1d5dc456646f0d',
+  'native_key' => 'semanager.elements_dir',
+  'object' => '{"key":"semanager.elements_dir","value":"{assets_path}elements\\/","xtype":"textfield","namespace":"semanager","area":"Files","editedon":null}',
+);

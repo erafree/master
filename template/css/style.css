@@ -1,0 +1,119 @@
+@import url('../fonts/open-sans.css');
+@import url('../fonts/bebasneuebold.css');
+@import url('../fonts/font-awesome.css');
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}
+h1 {
+  font-size: 71px;
+  font-weight: 800;
+  font-family: 'Bebas Neue';
+  margin: 0;
+}
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.pr_head {
+  background-color: #75c44e;
+  height: 80px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.36) inset;
+}
+.pr_head img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.pr_imgsection {
+  margin-top: -80px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.pr_imgsection img {
+  width: 100%;
+  margin-top: 80px;
+}
+.pr_glasspan {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -205px;
+  width: 410px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  margin-top: 130px;
+}
+.pr_glasspan .pr_grbtn {
+  background-color: rgba(89, 199, 81, 0.9);
+  box-shadow: 0 5px 27px rgba(0, 0, 0, 0.15);
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pr_glasspan .pr_descr {
+  padding: 20px 70px;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 16px;
+  text-align: center;
+}
+.pr_title {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.pr_title h3 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  margin-top: 5px;
+}
+.pr_grline {
+  background-color: rgba(37, 35, 40, 0.85);
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.pr_grline .btn {
+  border: 1px solid #7a7a7a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  width: 300px;
+  margin-top: 18px;
+}
+.pr_feedback {
+  background-color: #e7e7e7;
+  min-height: 100px;
+  display: none;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+}
+.btn--lghtm {
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+}
+/*# sourceMappingURL=roots/main.min.css.map */

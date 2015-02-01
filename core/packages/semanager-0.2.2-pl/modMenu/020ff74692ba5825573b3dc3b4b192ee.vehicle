@@ -1,0 +1,39 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '4ff8ec9c41feb59717bfab1fef21a6b9' => 
+      array (
+        'class' => 'modAction',
+        'object' => '{"id":200,"namespace":"semanager","controller":"home","haslayout":1,"lang_topics":"semanager:default","assets":"","help_url":"","parent":0}',
+        'guid' => '9fcb721c64a65bc647af7f6a1243d3b7',
+        'native_key' => 200,
+        'signature' => 'ace32c2f3e9660cfdc4238434f087179',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'text',
+    ),
+  ),
+  'namespace' => 'semanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'df65bda5aa1399adc6c3b51822a02edd',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '020ff74692ba5825573b3dc3b4b192ee',
+  'native_key' => 'semanager.title',
+  'object' => '{"text":"semanager.title","parent":"components","action":200,"description":"semanager.description","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

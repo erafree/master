@@ -1,0 +1,4 @@
+[2015-01-31 21:14:51] (ERROR in xPDOConnection::connect @ D:\Work\AppServ\www\erafree\core\xpdo\xpdo.class.php : 3043) SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+[2015-01-31 21:14:51] (ERROR in xPDOConnection::connect @ D:\Work\AppServ\www\erafree\core\xpdo\xpdo.class.php : 3043) SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+[2015-01-31 21:14:51] (ERROR in xPDOConnection::connect @ D:\Work\AppServ\www\erafree\core\xpdo\xpdo.class.php : 3043) SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+[2015-01-31 21:14:51] (ERROR in xPDOConnection::connect @ D:\Work\AppServ\www\erafree\core\xpdo\xpdo.class.php : 3043) SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)

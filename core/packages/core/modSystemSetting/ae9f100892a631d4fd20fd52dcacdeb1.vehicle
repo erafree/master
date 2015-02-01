@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '651c3d9c85bb5aceebbeffb516128ada',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ae9f100892a631d4fd20fd52dcacdeb1',
+  'native_key' => 'resource_tree_node_name',
+  'object' => '{"key":"resource_tree_node_name","value":"pagetitle","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);
