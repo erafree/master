@@ -1,5 +1,5 @@
 @import url('colors.less');
-@import url('blocks.less');
+@import url('animate.less');
 @import url('../fonts/open-sans.css');
 @import url('../fonts/bebasneuebold.css');
 @import url('../fonts/font-awesome.css');
@@ -10,6 +10,7 @@
 @btnH: 62px;
 @brR: 40px;
 @topP: 30%;
+@pnW: 410px;
 
 @grayTr: rgba(37, 35, 40, 0.85);
 
@@ -24,16 +25,20 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1;
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	min-height: 700px;
 }
 
-h1 {
+h1, .h1 {
 	font-size: 71px;
 	font-weight: 800;
 	font-family: 'Bebas Neue';
 	margin: 0;
 }
 
-h3 {
+h3, .h3 {
 	font-size: 24px;
 	margin: 0;
 }
@@ -61,40 +66,106 @@ h3 {
 	overflow: hidden;
 	position: relative;
 	height: 100%;
+
+	&.contacthandler {
+    	display: none;
+	}
+	&.visible {
+		display: block;
+	}
 }
 
 .pr_glasspan {
-	@pd: 70px;
-	@pnW: 410px;
-
 	position: absolute;
-	top: @topP;
 	left: 50%;
-	margin-left: -1 * (@pnW / 2);
-	width: @pnW;
 	border-radius: @brR;
 	background-color: rgba(255, 255, 255, 0.18);
 	color: #fff;
-	margin-top: 130px;
+}
+
+.pr_pn(@pnW,@topP, 130px);
+
+.pr_grbtn {
+	background-color: rgba(89, 199, 81, 0.9);
+	box-shadow: 0 5px 27px rgba(0, 0, 0, 0.15);
+	height: @btnH;
+	line-height: @btnH;
+	text-align: center;
+	border-radius: @brR;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.pr_pn(@w, @t, @mt) {
+	.pr_glasspan {
+		margin-left: -1 * (@w / 2);
+		width: @w;
+		top: @t;
+		margin-top: @mt;
+	}
+}
+
+
+.pr_descr {
+	padding:20px 70px;
+	font-weight: normal;
+	line-height: 21px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.contactssection {
+	@pnW: 625px;
+	@t: @topP - 9;
+
+	.pr_pn(@pnW, @t, 150px);
 
 	.pr_grbtn {
-		background-color: rgba(89, 199, 81, 0.9);
-		box-shadow: 0 5px 27px rgba(0, 0, 0, 0.15);
-		height: @btnH;
-		line-height: @btnH;
-		text-align: center;
-		border-radius: @brR;
-		font-size: 18px;
-		font-weight: 600;
-		cursor: pointer;
+		position: absolute;
+		width: 70%;
+		left: 50%;
+		margin-left: -35%;
+		bottom: -1 * (@btnH / 2);
 	}
 
-	.pr_descr {
-		padding:20px @pd;
-		font-weight: normal;
-		line-height: 21px;
-		font-size: 16px;
-		text-align: center;
+	.pr_title {
+		top: @t;
+	}
+}
+
+.pr_inputhl {
+	margin: 45px 10px 60px 10px;
+	background-color: #dddddd;
+
+	.innerinput {
+		@pd: 25px;
+		margin: 0 @pd;
+
+		textarea, input {
+			width: 100%;
+			padding: @pd;
+			margin-left: -1 * @pd;
+			border:none;
+			background: transparent;
+			font-family: 'Open Sans';
+			font-size: 14px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		textarea {
+			height: 140px;
+			resize: none;
+		}
+
+		input {
+			border-top: 1px solid #cecece;
+			height: 1px;
+			line-height: 50px;
+		}
 	}
 }
 

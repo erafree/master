@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.0.4, created on 2015-01-31 18:45:34
+<?php /* Smarty version Smarty-3.0.4, created on 2015-02-04 12:01:03
          compiled from "D:/Work/AppServ/www/erafree/core/components/semanager/templates/home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3210154cd22ce112964-96127207%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2503554d209ff0233e2-82410939%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3210154cd22ce112964-96127207',
+  'nocache_hash' => '2503554d209ff0233e2-82410939',
   'function' => 
   array (
   ),

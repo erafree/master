@@ -1,9 +1,10 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
   var config = {
-      tp: 'templates'
+      tp: 'template'
   };
   grunt.initConfig({
+      config: config,
       less:  {
         development: {
           options: {
@@ -26,16 +27,21 @@ module.exports = function(grunt) {
       },
       watch: {
         styles: {
-          files: ['less/*.less'],
+          files: ['<%= config.tp %>/less/*.less'],
           tasks: ['less'],
           options: {
             nospawn: true
           }
         }
-      }
+      },
+      serve: {
+        options: {
+            port: 9000
+        }
+    }
   });
 
-  grunt.registerTask('devPrepare', ['less','watch']);
+  grunt.registerTask('devPrepare', ['less','watch', 'serve']);
   grunt.registerTask('default', ['devPrepare']);
 
 };

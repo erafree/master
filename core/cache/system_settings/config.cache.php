@@ -266,4 +266,7 @@
   'semanager.use_categories' => '1',
   'semanager.auto_create_elements' => '1',
   'access_policies_version' => '1.0',
+  'formit.recaptcha_public_key' => '',
+  'formit.recaptcha_private_key' => '',
+  'formit.recaptcha_use_ssl' => '',
 );
