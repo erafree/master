@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "load-grunt-tasks": "^0.4.0",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-serve": "^0.1.6"
+    "grunt-serve": "^0.1.6",
+    "grunt-php": "^0.4.0",
+    "grunt-browser-sync": "^1.9.1",
+    "load-grunt-tasks": "^0.4.0"
   },
   "engines": {
     "node": ">=0.10.0"

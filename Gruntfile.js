@@ -5,6 +5,39 @@ module.exports = function(grunt) {
   };
   grunt.initConfig({
       config: config,
+      php: {
+        dist: {
+            options: {
+                hostname: '127.0.0.1',
+                port: 9000,
+                //base: 'dist', // Project root
+                keepalive: false,
+                open: false
+            }
+        }
+      },
+      browserSync: {
+        dist: {
+            bsFiles: {
+                src: [
+                    // Files you want to watch for changes
+                ]
+            },
+            options: {
+                proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
+                watchTask: true,
+                notify: true,
+                open: true,
+                logLevel: 'silent',
+                ghostMode: {
+                    clicks: true,
+                    scroll: true,
+                    links: true,
+                    forms: true
+                }
+            }
+        }
+      },
       less:  {
         development: {
           options: {
@@ -33,15 +66,15 @@ module.exports = function(grunt) {
             nospawn: true
           }
         }
-      },
-      serve: {
-        options: {
-            port: 9000
-        }
-    }
+      }
   });
 
-  grunt.registerTask('devPrepare', ['less','watch', 'serve']);
-  grunt.registerTask('default', ['devPrepare']);
+  grunt.registerTask('serve', [
+      'php:dist',         // Start PHP Server
+      'browserSync:dist', // Using the php instance as a proxy
+      'watch'             // Any other watch tasks you want to run
+  ]);
 
+  //grunt.registerTask('devPrepare', ['less','watch', 'serve']);
+  grunt.registerTask('default', ['serve']);
 };

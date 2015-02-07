@@ -1,0 +1,3 @@
+Need to add links to php to start php server
+PHP_BINDIR
+Path
