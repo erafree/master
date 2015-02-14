@@ -15,12 +15,12 @@ $config_options = array (
 $driver_options = array (
 );
 
-$lastInstallTime = 1422728133;
+$lastInstallTime = 1423957904;
 
-$site_id = 'modx54cd1bc511a748.31907131';
+$site_id = 'modx54dfdf9079fb31.07303869';
 $site_sessionname = 'SN54c6e3fab838c';
 $https_port = '443';
-$uuid = 'b83a026b-459f-4f68-8289-955a505bb662';
+$uuid = '0bbdbc89-4a1d-4815-a2df-955471347fcd';
 
 if (!defined('MODX_CORE_PATH')) {
     $modx_core_path= 'D:/Work/AppServ/www/erafree/core/';
@@ -32,19 +32,19 @@ if (!defined('MODX_PROCESSORS_PATH')) {
 }
 if (!defined('MODX_CONNECTORS_PATH')) {
     $modx_connectors_path= 'D:/Work/AppServ/www/erafree/connectors/';
-    $modx_connectors_url= '/erafree/connectors/';
+    $modx_connectors_url= '/connectors/';
     define('MODX_CONNECTORS_PATH', $modx_connectors_path);
     define('MODX_CONNECTORS_URL', $modx_connectors_url);
 }
 if (!defined('MODX_MANAGER_PATH')) {
     $modx_manager_path= 'D:/Work/AppServ/www/erafree/manager/';
-    $modx_manager_url= '/erafree/manager/';
+    $modx_manager_url= '/manager/';
     define('MODX_MANAGER_PATH', $modx_manager_path);
     define('MODX_MANAGER_URL', $modx_manager_url);
 }
 if (!defined('MODX_BASE_PATH')) {
     $modx_base_path= 'D:/Work/AppServ/www/erafree/';
-    $modx_base_url= '/erafree/';
+    $modx_base_url= '/';
     define('MODX_BASE_PATH', $modx_base_path);
     define('MODX_BASE_URL', $modx_base_url);
 }
@@ -59,10 +59,10 @@ if (!defined('MODX_URL_SCHEME')) {
 }
 if (!defined('MODX_HTTP_HOST')) {
     if(defined('PHP_SAPI') && (PHP_SAPI == "cli" || PHP_SAPI == "embed")) {
-        $http_host='localhost:5555';
+        $http_host='localhost:9000';
         define('MODX_HTTP_HOST', $http_host);
     } else {
-        $http_host= array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'localhost:5555';
+        $http_host= array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'localhost:9000';
         if ($_SERVER['SERVER_PORT'] != 80) {
             $http_host= str_replace(':' . $_SERVER['SERVER_PORT'], '', $http_host); // remove port from HTTP_HOST
         }
@@ -76,7 +76,7 @@ if (!defined('MODX_SITE_URL')) {
 }
 if (!defined('MODX_ASSETS_PATH')) {
     $modx_assets_path= 'D:/Work/AppServ/www/erafree/assets/';
-    $modx_assets_url= '/erafree/assets/';
+    $modx_assets_url= '/assets/';
     define('MODX_ASSETS_PATH', $modx_assets_path);
     define('MODX_ASSETS_URL', $modx_assets_url);
 }

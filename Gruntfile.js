@@ -10,7 +10,6 @@ module.exports = function(grunt) {
             options: {
                 hostname: '127.0.0.1',
                 port: 9000,
-                //base: 'dist', // Project root
                 keepalive: false,
                 open: false
             }
@@ -38,30 +37,22 @@ module.exports = function(grunt) {
             }
         }
       },
-      less:  {
-        development: {
-          options: {
-            compress: false,
-            yuicompress: false,
-            optimization: 2,
-            sourceMap: true,
-            sourceMapFilename: '<%= config.tp %>/css/roots/main.min.css.map',
-            sourceMapURL: 'roots/main.min.css.map',
-            sourceMapRootpath: '../../'
-          },
+      sass: {
+        dist: {
+          options: {},
           files: [{
-              expand: true,
-              cwd: '<%= config.tp %>/less',
-              src: '{,*/}*.less', //'{,*/}*.less'
-              dest: '<%= config.tp %>/css',
-              ext: '.css'
+            expand: true,
+            cwd: '<%= config.tp %>/sass',
+            src: '{,*/}*.scss',
+            dest: '<%= config.tp %>/css',
+            ext: '.css'
           }]
         }
       },
       watch: {
         styles: {
-          files: ['<%= config.tp %>/less/*.less'],
-          tasks: ['less'],
+          files: ['<%= config.tp %>/sass/*.scss'],
+          tasks: ['sass'],
           options: {
             nospawn: true
           }
@@ -70,11 +61,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('serve', [
-      'php:dist',         // Start PHP Server
-      'browserSync:dist', // Using the php instance as a proxy
-      'watch'             // Any other watch tasks you want to run
+      'php:dist',
+      'browserSync:dist',
+      'watch'
   ]);
 
-  //grunt.registerTask('devPrepare', ['less','watch', 'serve']);
   grunt.registerTask('default', ['serve']);
 };
