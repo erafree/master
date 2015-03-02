@@ -6,3 +6,6 @@
 /setup/
 /config/
 /config.inc.php
+/.DS_Store
+/.idea
+/master/manager/config.core.php
