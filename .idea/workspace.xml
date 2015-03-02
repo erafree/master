@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b85c351-6330-4404-8ab7-7c0946672063" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/components/D:/Work/AppServ/www/erafree/template/elements/chunks/quickfeedback.ch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/components/D:/Work/AppServ/www/erafree/template/elements/plugins/SEManager.pl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/components/D:/Work/AppServ/www/erafree/template/elements/templates/BaseTemplate.tp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/components/D:/Work/AppServ/www/erafree/template/elements/templates/article.tp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/components/D:/Work/AppServ/www/erafree/template/elements/templates/promo.tp.html" afterPath="" />
-    </list>
+    <list default="true" id="6b85c351-6330-4404-8ab7-7c0946672063" name="Default" comment="" />
     <ignored path="erafree.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -64,7 +58,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13907285" vertical-offset="0" max-vertical-offset="755">
+            <state vertical-scroll-proportion="0.13461539" vertical-offset="0" max-vertical-offset="780">
               <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
               <folding />
             </state>
@@ -474,12 +468,12 @@
       <option name="number" value="Default" />
       <updated>1425239767602</updated>
       <workItem from="1425239768016" duration="1120000" />
-      <workItem from="1425241001200" duration="5291000" />
+      <workItem from="1425241001200" duration="5425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6411000" />
+    <option name="totallyTimeSpent" value="6545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1393" height="877" extended-state="0" />
@@ -657,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13907285" vertical-offset="0" max-vertical-offset="755">
+        <state vertical-scroll-proportion="0.13461539" vertical-offset="0" max-vertical-offset="780">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
         </state>
