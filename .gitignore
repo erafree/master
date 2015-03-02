@@ -2,6 +2,7 @@
 /bower_components/
 /template/
 /.sass-cache/
-/core/config/
+/core/config/config.inc.php
 /setup/
 /config/
+/config.inc.php

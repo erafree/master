@@ -8,32 +8,10 @@ module.exports = function(grunt) {
       php: {
         dist: {
             options: {
-                hostname: '127.0.0.1',
+                hostname: 'localhost',
                 port: 9000,
                 keepalive: false,
                 open: false
-            }
-        }
-      },
-      browserSync: {
-        dist: {
-            bsFiles: {
-                src: [
-                    // Files you want to watch for changes
-                ]
-            },
-            options: {
-                proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
-                watchTask: true,
-                notify: true,
-                open: true,
-                logLevel: 'silent',
-                ghostMode: {
-                    clicks: true,
-                    scroll: true,
-                    links: true,
-                    forms: true
-                }
             }
         }
       },
@@ -62,7 +40,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', [
       'php:dist',
-      'browserSync:dist',
       'watch'
   ]);
 

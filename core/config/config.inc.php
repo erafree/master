@@ -4,8 +4,8 @@
  */
 $database_type = 'mysql';
 $database_server = 'localhost';
-$database_user = 'root';
-$database_password = '';
+$database_user = 'modx';
+$database_password = 'modx';
 $database_connection_charset = 'utf8';
 $dbase = 'erafree';
 $table_prefix = 'erafree_';
@@ -15,35 +15,35 @@ $config_options = array (
 $driver_options = array (
 );
 
-$lastInstallTime = 1423614168;
+$lastInstallTime = 1425249718;
 
-$site_id = 'modx54daa0d89036b9.64721651';
+$site_id = 'modx54f395b631b713.56724821';
 $site_sessionname = 'SN54c6e3fab838c';
 $https_port = '443';
-$uuid = '13170bae-b050-4a0f-8f62-7da98fb43d46';
+$uuid = '63a34cae-9ac3-4b55-9ece-d3ff187062e0';
 
 if (!defined('MODX_CORE_PATH')) {
-    $modx_core_path= 'D:/Work/wamp/www/master/core/';
+    $modx_core_path= '/Users/maks/Work/erafree/core/';
     define('MODX_CORE_PATH', $modx_core_path);
 }
 if (!defined('MODX_PROCESSORS_PATH')) {
-    $modx_processors_path= 'D:/Work/wamp/www/master/core/model/modx/processors/';
+    $modx_processors_path= '/Users/maks/Work/erafree/core/model/modx/processors/';
     define('MODX_PROCESSORS_PATH', $modx_processors_path);
 }
 if (!defined('MODX_CONNECTORS_PATH')) {
-    $modx_connectors_path= 'D:/Work/wamp/www/master/connectors/';
+    $modx_connectors_path= '/Users/maks/Work/erafree/connectors/';
     $modx_connectors_url= '/connectors/';
     define('MODX_CONNECTORS_PATH', $modx_connectors_path);
     define('MODX_CONNECTORS_URL', $modx_connectors_url);
 }
 if (!defined('MODX_MANAGER_PATH')) {
-    $modx_manager_path= 'D:/Work/wamp/www/master/manager/';
+    $modx_manager_path= '/Users/maks/Work/erafree/manager/';
     $modx_manager_url= '/manager/';
     define('MODX_MANAGER_PATH', $modx_manager_path);
     define('MODX_MANAGER_URL', $modx_manager_url);
 }
 if (!defined('MODX_BASE_PATH')) {
-    $modx_base_path= 'D:/Work/wamp/www/master/';
+    $modx_base_path= '/Users/maks/Work/erafree/';
     $modx_base_url= '/';
     define('MODX_BASE_PATH', $modx_base_path);
     define('MODX_BASE_URL', $modx_base_url);
@@ -75,7 +75,7 @@ if (!defined('MODX_SITE_URL')) {
     define('MODX_SITE_URL', $site_url);
 }
 if (!defined('MODX_ASSETS_PATH')) {
-    $modx_assets_path= 'D:/Work/wamp/www/master/assets/';
+    $modx_assets_path= '/Users/maks/Work/erafree/assets/';
     $modx_assets_url= '/assets/';
     define('MODX_ASSETS_PATH', $modx_assets_path);
     define('MODX_ASSETS_URL', $modx_assets_url);
